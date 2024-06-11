@@ -16,7 +16,7 @@ minikube start
 4. Create secrets: https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/#configure-all-key-value-pairs-in-a-secret-as-container-environment-variables
 
 ```
-kubectl create secret generic test-secret --from-literal=username='my-app' --from-literal=password='39528$vdg7Jb'
+kubectl create secret generic test-secret --from-literal=SECRET='my-app'
 
 kubectl create -f pod-secret-envFrom.yaml
 
